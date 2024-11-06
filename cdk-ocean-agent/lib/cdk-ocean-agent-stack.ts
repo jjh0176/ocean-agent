@@ -196,6 +196,7 @@ const titan_embedding_v1 = [  // dimension = 1536
     "model_type": "titan",
     "model_id": "amazon.titan-embed-text-v1"
   }
+   
 ];
 
 const titan_embedding_v2 = [  // dimension = 1024
