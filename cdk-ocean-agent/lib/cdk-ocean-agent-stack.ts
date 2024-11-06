@@ -166,22 +166,22 @@ const claude3_haiku = [
   {
     "bedrock_region": "ap-south-1", // 뭄바이
     "model_type": "claude3",
-    "model_id": "anthropic.claude-3-sonnet-20240229-v1:0"
+    "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
   },
   {
     "bedrock_region": "ap-northeast-2", // 서울
     "model_type": "claude3",
-    "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0"
+    "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
   },
   {
     "bedrock_region": "eu-west-2", // 런던
     "model_type": "claude3",
-    "model_id": "anthropic.claude-3-sonnet-20240229-v1:0"
+    "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
   },
   {
     "bedrock_region":"sa-east-1", //# 상파울루 
     "model_type": "claude3",
-    "model_id": "anthropic.claude-3-sonnet-20240229-v1:0"
+    "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
   } 
 ];
 
