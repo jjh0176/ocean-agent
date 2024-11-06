@@ -2502,7 +2502,7 @@ def run_agent_ocean(connectionId, requestId, query):
     
     final_answer = get_final_answer(output['drafts'], subject_company, output['references'])
 
-    final_answer = translate_text_2(chat, final_answer) 
+    #final_answer = translate_text_2(chat, final_answer) 
     
     return final_answer
 
