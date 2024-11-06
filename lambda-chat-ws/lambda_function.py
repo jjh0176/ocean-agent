@@ -102,12 +102,12 @@ multi_region_models = [   # claude sonnet 3.0
         "max_tokens": 4096,
         "model_id": "anthropic.claude-3-sonnet-20240229-v1:0"
     },
-    {
-        "bedrock_region": "ap-northeast-2", # 서울 
-        "model_type": "claude3",
-        "max_tokens": 4096,
-        "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0" #"anthropic.claude-3-sonnet-20240229-v1:0"
-    },
+    # {
+    #     "bedrock_region": "ap-northeast-2", # 서울 
+    #     "model_type": "claude3",
+    #     "max_tokens": 4096,
+    #     "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0" #"anthropic.claude-3-sonnet-20240229-v1:0"
+    # },
     {
         "bedrock_region": "eu-west-2", # 런던 
         "model_type": "claude3",
