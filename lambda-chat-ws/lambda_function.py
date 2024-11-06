@@ -1464,6 +1464,41 @@ def translate_text(chat, text):
 
     return msg[msg.find('<result>')+8:len(msg)-9] # remove <result> tag
 
+
+def translate_text_2(chat, text):
+    system = (
+        "You are a helpful assistant that translates {input_language} to {output_language} in <article> tags." 
+        "Put it in <result> tags."
+    )
+    human = "<article>{text}</article>"
+    
+    prompt = ChatPromptTemplate.from_messages([("system", system), ("human", human)])
+    print('prompt: ', prompt)
+    
+    
+    input_language = "English"
+    output_language = "Korean"
+     
+                        
+    chain = prompt | chat    
+    try: 
+        result = chain.invoke(
+            {
+                "input_language": input_language,
+                "output_language": output_language,
+                "text": text,
+            }
+        )
+        msg = result.content
+        print('translated text: ', msg)
+    except Exception:
+        err_msg = traceback.format_exc()
+        print('error message: ', err_msg)                    
+        raise Exception ("Not able to request to LLM")
+
+    return msg[msg.find('<result>')+8:len(msg)-9] # remove <result> tag
+
+
 def check_grammer(chat, text):
     if isKorean(text)==True:
         system = (
@@ -2441,7 +2476,10 @@ def get_final_answer(drafts, subject_company, references):
     if references:
         reference = get_references(references)
 
+    
+
     return final_answer+reference
+    
             
 def run_agent_ocean(connectionId, requestId, query):
     subject_company = query
@@ -2463,6 +2501,8 @@ def run_agent_ocean(connectionId, requestId, query):
     # print('output: ', output)
     
     final_answer = get_final_answer(output['drafts'], subject_company, output['references'])
+
+    final_answer = translate_text_2(chat, final_answer) 
     
     return final_answer
 
