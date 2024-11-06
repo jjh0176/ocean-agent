@@ -71,11 +71,11 @@ const claude3_5_sonnet = [
     "model_type": "claude3",
     "model_id": "anthropic.claude-3-sonnet-20240229-v1:0"
   },
-  {
-    "bedrock_region": "ap-northeast-2", // 서울
-    "model_type": "claude3",
-    "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0"
-  },
+  // {
+  //   "bedrock_region": "ap-northeast-2", // 서울
+  //   "model_type": "claude3",
+  //   "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0"
+  // },
   {
     "bedrock_region": "eu-west-2", // 런던
     "model_type": "claude3",
@@ -94,11 +94,11 @@ const claude3_sonnet = [
     "model_type": "claude3",
     "model_id": "anthropic.claude-3-sonnet-20240229-v1:0"
   },
-  {
-    "bedrock_region": "ap-northeast-2", // 서울
-    "model_type": "claude3",
-    "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0"
-  },
+  // {
+  //   "bedrock_region": "ap-northeast-2", // 서울
+  //   "model_type": "claude3",
+  //   "model_id": "anthropic.claude-3-5-sonnet-20240620-v1:0"
+  // },
   {
     "bedrock_region": "eu-west-2", // 런던
     "model_type": "claude3",
@@ -168,11 +168,11 @@ const claude3_haiku = [
     "model_type": "claude3",
     "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
   },
-  {
-    "bedrock_region": "ap-northeast-2", // 서울
-    "model_type": "claude3",
-    "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
-  },
+  // {
+  //   "bedrock_region": "ap-northeast-2", // 서울
+  //   "model_type": "claude3",
+  //   "model_id": "anthropic.claude-3-haiku-20240307-v1:0"
+  // },
   {
     "bedrock_region": "eu-west-2", // 런던
     "model_type": "claude3",
@@ -225,11 +225,11 @@ const titan_embedding_v2 = [  // dimension = 1024
   //   "model_type": "titan",
   //   "model_id": "amazon.titan-embed-text-v2:0"
   // }
-  {
-    "bedrock_region": "ap-northeast-2", // 
-    "model_type": "titan",
-    "model_id": "amazon.titan-embed-text-v2:0"
-  },
+  // {
+  //   "bedrock_region": "ap-northeast-2", // 
+  //   "model_type": "titan",
+  //   "model_id": "amazon.titan-embed-text-v2:0"
+  // },
   {
     "bedrock_region": "eu-west-2", //  
     "model_type": "titan",
